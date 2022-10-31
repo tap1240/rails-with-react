@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { createRoot } from "react-dom/client";
 
-function Counter() {
+export default function Counter() {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -29,7 +29,4 @@ function Counter() {
   );
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  const counter = document.getElementById("counter");
-  createRoot(counter).render(<Counter />);
-});
+
